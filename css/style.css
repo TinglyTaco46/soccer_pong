@@ -1,0 +1,36 @@
+body {
+    color: black;
+    text-align: center;
+    background-image: url("https://wallpaperset.com/w/full/8/7/6/182129.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 320vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+}
+
+#gameCanvas {
+    border: 2px solid black;
+    width: 100vh;
+}
+
+#scoreboard {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+#scoreboard p {
+    margin: 5px;
+}
+#leftPlayerScore, #rightPlayerScore {
+    font-weight: bold;
+}
+
