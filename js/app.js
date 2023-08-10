@@ -13,8 +13,8 @@ const ballDiameter = ballRadius * 2
 // here I want to define the ball properties
 let ballX = canvas.width / 2
 let ballY = canvas.height / 2 
-let ballSpeedX = 5
-let ballSpeedY = 5
+let ballSpeedX = 4
+let ballSpeedY = 4
 
 // I want to define the player height and width
 const playerHeight = 50
@@ -45,6 +45,9 @@ const gameUpdate = () => {
     if (ballY <= 0 || ballY >= canvas.height) {
         ballSpeedY *= -1;
     }
+    // make field
+    const soccerFieldImage = document.getElementById("soccerField")
+    ctx.drawImage(soccerFieldImage, 0, 0, canvas.width, canvas.height)
 // make it so that the ball can bounce off the player 
     if ((ballX <= playerWidth && ballY >= leftPlayerY && ballY <= leftPlayerY + playerHeight) ||
         (ballX >= canvas.width - playerWidth && ballY >= rightPlayerY && ballY <= rightPlayerY + playerHeight)) 
@@ -63,6 +66,7 @@ const gameUpdate = () => {
         updateScoreDisplay();
         resetBallPosition();
     }
+    
     // make the player paddles 
     const leftPlayerPicture = document.getElementById("leftplayerImg")
     // console.log("leftPlayerPicture", leftPlayerPicture)
@@ -81,6 +85,7 @@ const gameUpdate = () => {
     // ctx.arc(ballX, ballY, 10, 0, Math.PI * 2)
     // ctx.fill()
 
+    
     requestAnimationFrame(gameUpdate)
 }
 // update the score display
