@@ -13,8 +13,8 @@ const ballDiameter = ballRadius * 2
 // here I want to define the ball properties
 let ballX = canvas.width / 2
 let ballY = canvas.height / 2 
-let ballSpeedX = 4
-let ballSpeedY = 4
+let ballSpeedX = 3
+let ballSpeedY = 3
 
 // I want to define the player height and width
 const playerHeight = 50
