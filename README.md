@@ -25,3 +25,5 @@ allow the game to speed up if the user cant score within a certain time frame
 Adding rounds to the game and reseting the game 
 
 Tunring it into a website that stores other games in it allowing the user to choose between different games. 
+
+Netlfiy link: https://chimerical-kangaroo-9f7d43.netlify.app
