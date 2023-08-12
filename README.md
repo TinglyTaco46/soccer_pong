@@ -5,6 +5,18 @@ The game logic was to recreate the oringal game pong from scratch by using canva
 
 Using CSS to style certain elements to style the game
 
+The users click the play button to start the game 
+
+Player 1 uses the "w" & "s" keys to move their player 
+
+Player 2 uses the "up" "down" arrow keys to move their player 
+
+Once the game starts the ball will move at round 
+
+The user objective is to move their player up and down to block the ball not allowing the other player to score 
+
+First player to five goals win the game
+
 My MVP goals were to make a full functing game that allows the user to player against someone else, and have a chance to win. Also wanted to make daily commits if possible. 
 
 Future updates
